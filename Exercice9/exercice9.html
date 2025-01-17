@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 9</title>
+</head>
+<body>
+    <h1>Exercice 9</h1>
+    <h2>Enoncé</h2>
+    <p>
+        Faire une fonction qui ajoute derrière chaque voyelle d'une chaine de caractères 'fe' et répète ensuite la voyelle. Par exemple :
+        <br>
+        Chat donne : chafeat
+    </p>
+    <h2>Notions ou méthodes javaScript utilisées</h2>
+    <p>Pour cet exercice :</p>
+    <ul>
+        <li>J'ai créé une chaîne de caractères vide appelée newStr.</li>
+        <li>J'ai utilisé la méthode<strong>.split('')</strong> pour créer un tableau contenant chaques caractères de la chaîne initiale.</li>
+        <li>J'ai créé un tableau contenant toutes les voyelles.</li>
+        <li>J'ai utilisé une boucle <strong>for of</strong> qui parcours le tableau. Et dans cette boucle :</li>
+        <ul>
+            <li>J'ai utilisé une condition <strong>if</strong> qui vérifie si le caractères de la chaîne est aussi présent dans le tableau des voyelles. Et si c'est le cas: Je rajoute la voyelle suivie de 'fe' et de la voyelle à ma chaîne vide.</li>
+            <li>Sinon, je rajoute juste le caractère à ma chaîne vide.</li>
+        </ul>
+    </ul>
+    <p>Finalement, la fonction renvoie la variable newStr contenant la nouvelle chaîne.</p>
+
+    <a href="./../index.html">Retour à la page d'accueil.</a>
+    <script src="./exercice9.js"></script>
+</body>
+</html>

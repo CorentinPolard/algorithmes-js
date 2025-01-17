@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+<body>
+    <h1>Exercice 5</h1>
+    <h2>Enoncé</h2>
+    <p>Écrivez une fonction pour supprimer les doublons d’un tableau : Exemple : [1, 2, 3, 3, 3, 4, 5, 5] Résultat attendu : [1, 2, 3, 4, 5]</p>
+    <h2>Notions ou méthodes javaScript utilisées</h2>
+    <p>Pour cet exercice j'ai utilisé :</p>
+    <ul>
+        <li>2 boucles <strong>for in</strong></li>
+        <li>Une instruction <strong>if</strong> à deux conditions avec <strong>&&</strong></li>
+        <li>L'instruction <strong>.splice</strong> pour supprimer les valeurs de mon tableau</li>
+    </ul>
+    <p>
+        J'ai commencé par parcourir mon tableau une première fois avec une boucle for in à l'aide d'une variable val1. Puis immédiatement une seconde fois avec une autre boucle for in avec une variable val2. 
+        <br>
+        Jusque là j'ai une boucle for in à l'intérieur de la première boucle for in.
+        <br>
+        Ensuite à l'intérieur de ma seconde boucle, j'utilise une condition if qui va supprimer, dans le tableau, l'élément à la position val2 si et seulement si : 
+    </p>
+    <ul>
+        <li>val1 et val 2 sont différentes (car sinon on l'algorithme va comparer un élément du tableau avec lui même et comme ils seront égaux, ils seront supprimés).</li>
+        <li>Si l'élément à l aposition val1 est le même que l'élément à la position val2.</li>
+    </ul>
+    <a href="./../index.html">Retour à l apage d'accueil.</a>
+    <script src="./exercice5.js"></script>
+</body>
+</html>

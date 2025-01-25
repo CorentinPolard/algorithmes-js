@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 14</title>
+</head>
+<body>
+    <h1>Exercice 14</h1>
+    <h2>Le jeu du cochon !</h2>
+    <p>
+        Un cochon peut avoir : 4 pattes, 2 yeux, 1 queue, 2 oreilles
+        <br>
+        Une fois le cochon assemblé, vous avez gagné !
+        <br>
+        Pour se faire il faut lancer un dé spécial composé de 6 faces :
+    </p>
+        
+        <ul>
+            <li>3 avec des pattes</li>
+            <li>1 avec un oeil</li>
+            <li>1 avec une queue</li>
+            <li>1 avec une oreille</li>
+        </ul>
+        <p>
+            (Les faces avec les pattes, ne sont pas toutes collées)
+            <br>
+            Objectif : Vous devez compter en combien de lancé de dé vous avez réussi à assembler votre cochon !
+        </p>
+
+    <h2>Notions ou méthodes javaScript utilisées</h2>
+    <p>
+        Pour cet exercice, j'ai utilisé les méthodes <strong>Math.floor() et Math.random()</strong> ainsi qu'une <strong>boucle while</strong>. 
+        <br>
+        J'ai créé un tableau représentant le dé contenant 3 fois 'patte', et une fois chacun 'oeil', 'oreille' et 'queue'.  
+        <br>
+        J'ai ensuite créé 5 compteurs, un pour le nombre de lancés de dé, et un pour compter le nombre de composants du cochon (pour compter son nombre de pattes, d'oreilles... à chaque tour).
+        <br>
+        J'ai ensuite créé une boucle while qui lance le dé tant que le cochon n'est pas assemblé (avec plusieurs conditions <strong>||</strong>).
+    </p>
+    <a href="./../index.html">Retour à la page d'accueil.</a>
+    <script src="./exercice14opti.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 12</title>
+</head>
+<body>
+    <h1>Exercice 12</h1>
+    <h2>Enoncé</h2>
+    <p>
+        Faire une fonction qui permet de calculer la valeur d'un mot au Scrabble.
+        Elle prendra en paramètre une chaîne de caractère et la valeur en point du mot sera retournée.
+        Valeurs des lettres :
+    </p>
+    <ul>
+        <li>1 point: "A", "E", "I", "O", "U", "L", "N", "R", "S", "T",</li>
+        <li>2 points: "D", "G",</li>
+        <li>3 points: "B", "C", "M", "P",</li>
+        <li>4 points: "F", "H", "V", "W", "Y",</li>
+        <li>5 points: "K",</li>
+        <li>8 points: "J", "X",</li>
+        <li>10 points: "Q", "Z",</li>
+    </ul>
+    <h2>Notions ou méthodes javaScript utilisées</h2>
+    <p>
+        Pour cet exercice, j'ai utilisé <storng>2 boucles for...of, une instruction if et les méthodes .includes() et .toUpperCase()</storng>.
+        J'ai d'abord créé un tableau contenant d'autres tableaux contenant la valeur des lettres et les lettres concernées.
+        Ensuite, j'ai créé un compteur. 
+        J'ai ensuite utilisé une boucle for...of pour parcourir chaque lettre du mot passé en paramètre.
+        Puis une autre boucle for...of pour parcourir les tableaux contenant les lettres et leur valeur.
+        J'ai utilisé une instruction if pour vérifier si la lettre du mot est incluse dans le tableau de lettres avec .includes() et .toUpperCase().
+        Enfin j'ajoute la valeur trouvée au compteur et ma fonction retourne le compteur à la fin.
+    </p>
+    <a href="./../index.html">Retour à la page d'accueil.</a>
+    <script src="./exercice12.js"></script>
+</body>
+</html>

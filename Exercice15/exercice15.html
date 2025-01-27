@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 15</title>
+</head>
+<body>
+    <h1>Exercice 15</h1>
+    <h2>Le jeu du Yahtzee !</h2>
+    <p>
+        Faire une fonction qui simule un jeu de <a href="https://fr.wikipedia.org/wiki/Yahtzee">yatzee</a>.
+        <br>
+        Le Yatzee est un jeu de lancer de dé (au nombre de 5).
+        <br>
+        Vous devrez afficher chaque lancé de dé random, on va rester simple et afficher quelque chose de ce style : (1) (4) (6) (2) (4)
+        <br>
+        Une fois le lancé affiché, la fonction doit informer l'utilisateur de ce qu'il a fait :
+    </p>
+    <ul>
+        <li>Brelan (3 dés du même résultat)</li>
+        <li>Carré (4 dés du même résultat)</li>
+        <li>Full (3 dés du même résultat et 2 dés du même résultat)</li>
+        <li>Yams (5 dés du même résultat)</li>
+        <li>Petite suite : 4 dés se suivent (1, 2, 3, 4 ou 2, 3, 4, 5 ou 3, 4, 5, 6)</li>
+        <li>Grande suite : les 5 dés se suivent</li>
+    </ul>
+    <p>
+        Exemple à afficher à l'utilisateur une fois les calculs terminés :
+        <br>
+        (2) (2) (4) (4) (4)
+        <br>
+        Est ce une grande suite : Non
+        <br>
+        Est ce une petite suite : Non
+        <br>
+        Est ce que c'est un Yatzhee : Non
+        <br>
+        Est ce que c'est un Square : Non 
+        <br>
+        Est ce que c'est un Full : Oui
+        <br>
+        Est ce que c'est un Brelan : Oui
+    </p>
+    <h2>Notions ou méthodes javaScript utilisées</h2>
+    <p>
+        Pour cet exercice, j'ai tout d'abord créé deux tableaux vides dice et sortedDice qui vont contenir les résultats des lancés de dé et un tableau compteurs contenant six fois 0 qui va servivr à compter le nombre de 1, de 2, de 3...
+        <br>
+        J'utilise ensuite une <strong>boucle for</strong>, <strong>Math.floor() et Math.random()</strong> pour simuler 5 lancés de dé et utiliser les compteurs du troisième tableau. 
+        <br>
+        J'initialise ensuite les résultats possibles à 'Non' (square, full, grande suite...).
+        <br>
+        Et j'utilise des <strong>if</strong> pour comparer mon tableau des compteurs avec <strong>.includes()</strong> et voir si on a obtenu un yantzhee, un square... 
+        <br>
+        Je trie le tableau sortedDice avec <strong>.sort()</strong> dans l'ordre croissant, j'élimine ses doublons avec deux <strong>boucle for...in</strong> et un <strong>if</strong>.
+        <br>
+        Enfin j'utilise <strong>.join()</strong> pour transformer mon sortedDice en chaîne de caractères et <strong>.includes()</strong> pour vérifier si on a une grande suite ou une petite suite.
+    </p>
+    <a href="./../index.html">Retour à la page d'accueil.</a>
+    <script src="./exercice15.js"></script>
+</body>
+</html>
+
+
